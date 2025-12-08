@@ -1,0 +1,13 @@
+@media (max-width: 425px){
+    #nav-menu ul{
+        flex-direction: column;
+        gap: 5px;
+    }
+    #nav-menu ul li{
+        width: 90px;
+        background-color: var(--soft-black-);
+        padding: 4px;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+} 

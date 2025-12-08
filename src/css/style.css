@@ -1,0 +1,143 @@
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    background-color: var(--soft-black-);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 30px;
+    background-color: var(--dark-green-);
+    color: white;
+    position: fixed;
+    z-index: 10;
+    border-bottom: solid 5px var(--middle-gray-);
+}
+.logo{
+    cursor: default;
+}
+#nav-menu ul, .logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: clamp(10px, 2vw, 20px);
+    text-align: center;
+}
+#section-1{
+    display: grid;
+    grid-template: "text img";
+    place-content: start;
+    min-height:100%;
+    padding: 30px;
+    padding-top: 100px;
+    color: var(--middle-gray-);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-area: text;
+    font-size: clamp(10px, 3vw, 30px);
+}
+.img{
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+    animation: ilumination 2s ease-in-out infinite  ;
+}
+
+#treinamentos{
+    height: auto;
+}
+
+#treinamentos h1, #servicos h1, #beneficios h2{
+    text-align: center;
+    font-size: clamp(12px, 8vw, 40px);
+    color: var(--dark-green-);
+}
+
+.cards{
+    display: grid;
+    grid-template: auto / repeat(auto-fill, minmax(100px, 400px));
+    place-content: center;
+    gap: 50px;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: solid var(--dark-green-);
+    color: var(--dark-green-);
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: start;
+    transition: 0.7s ease-out;
+    opacity: 1;
+    width:auto;
+    height: auto;
+}
+
+.card p{
+    color: white;
+    font-weight: 700;
+}
+
+.card:hover{
+    box-shadow: 15px 15px 10px black;
+    transform: translateY(-10px);
+}
+
+#beneficios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+    color: white;
+    padding: 30px;
+}
+    
+#beneficios ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#beneficios ul li{
+    background-color: var(--dark-green-);
+    width: 100%;
+    max-width: 500px;
+    border:solid white;
+    border-radius: 30px;
+    padding: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    height: 200px;
+    width: 100%;
+    padding: 30px;
+    background-color: #000000;
+    color: white;
+}
