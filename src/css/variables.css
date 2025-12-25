@@ -1,7 +1,8 @@
 :root{
-    --green-:#2ECC71;
-    --dark-green-:#27AE60;
-    --middle-gray-:#BDBDBD;
+    --primary-:#2e82cc;
+    --dark-primary-:#0b2b6e;
+    --middle-gray-:#948989;
     --soft-black-:#1E1E1E;
-    --font-family-: Arial, Helvetica, sans-serif;
+    --font-1-: Arial, Helvetica, sans-serif;
+    --font-2-:'Times New Roman', Times, serif;
 }

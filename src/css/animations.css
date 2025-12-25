@@ -6,7 +6,7 @@
 }
 .show{
     opacity: 1;
-    transform: translateY(10%);
+    transform: translateY(0%);
     filter: blur(0);
 }
 @keyframes ilumination {
