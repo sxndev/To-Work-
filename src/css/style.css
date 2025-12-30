@@ -98,8 +98,8 @@ header{
     max-height: 100%;
     color: white;
     background: url(../images/victor-meza-ZAaUcbDdkQU-unsplash.jpg) no-repeat ;
-    background-position: -100%;
-    background-size: contain;
+    background-position: left center;
+    background-size: cover;
 } 
 #investir h2{
     color: white;
@@ -250,7 +250,7 @@ header{
 
 #clientes ul{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     align-content: center;
     max-width: 100%;
     padding: 50px;
