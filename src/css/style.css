@@ -12,7 +12,7 @@ header{
     justify-content: space-between;
     width: 100%;
     height: 80px;
-    padding: 40px;
+    padding: 30px;
     background-color: var(--dark-primary-);
     color: white;
     position: fixed;
@@ -22,11 +22,12 @@ header{
 }
 
 #treinamentos,
-#servicos,
-#beneficios{
+#servicos{
     scroll-margin-top: 100px;
 } 
-
+#about{
+    scroll-margin-top: 80px;
+}
 .logo{
     cursor: default;
 }
@@ -36,9 +37,8 @@ header{
     width: 100%;
     gap: 20px;
     font-weight: 600;
-    font-size: clamp(10px, 2.5vw, 20px);
+    font-size: clamp(10px, 2vw, 20px);
     text-align: center;
-    position: relative;
 }
 
 #nav-menu ul li a{
@@ -64,9 +64,10 @@ header{
 }
 #section-1{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
+    width: 100%;
     min-height:100vh;
-    background: url(/src/images/homem-no-arame.jpg) center center no-repeat scroll;
+    background: url(../images/homem-no-arame.jpg) 70% no-repeat ;
     background-size: cover;
 }
 
@@ -74,25 +75,51 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    width: 100%;
     gap: 30px;    
     text-align: start;
-    width: 100%;   
-    padding: 50px;
+    padding: 30px;
     padding-top: 120px;
-    font-size: clamp(10px, 3vw, 30px);
-    background-color: white;
+    font-size: clamp(12px, 3vw, 30px);
+    background-color: white; 
     color: var(--dark-primary-); 
     border-right: 5px solid var(--primary-);
 }
-    
 
+#investir{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    color: white;
+    background: url(../images/victor-meza-ZAaUcbDdkQU-unsplash.jpg) 100%    / cover no-repeat local;
+} 
+#investir h2{
+    color: white;
+    padding: 50px;
+    font-family: var(--font-2-);
+    font-size: clamp(10px,6vw,40px);
+}
+.texts{ 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    font-size: clamp(10px,2vw, 20px);
+    text-align: center;
+    gap: 10px;
+    background-color: var(--dark-primary-);
+    border-left: solid 5px;
+}
 #treinamentos-servicos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    min-height:100vh;
+    height:auto;
     width: 100%;
-    background: url(/src/images/marceneiro.jpg) top center /  cover no-repeat fixed;
+    background: url(..//images/marceneiro.jpg) top center /  cover no-repeat fixed;
 }
 
 .tittle-section{
@@ -107,15 +134,13 @@ header{
     gap: 30px;
     padding: 40px;
     height: 100%;
-    max-width:100%;
-    background-color: white;
-    border: solid 5px var(--dark-primary-);
-    border-left: none;
-    border-radius: 0px 30px 30px 0px;
+    grid-column: 1 / 2;
+    background-color: var(--soft-black-);
+    border-right: solid 5px white;
 }
 
 .cards .tittle-section{
-    color: var(--dark-primary-);
+    color: white;
 }
 .card{
     display: flex;
@@ -130,8 +155,9 @@ header{
     text-align: start;
     transition: 0.5s ease-out;
     opacity: 1;
-    max-width:400px;
+    width: 100%;
     height: auto;
+    font-size: clamp(15px,2vw,20px);
 }
 
 .card p{
@@ -143,64 +169,6 @@ header{
     transform: translateY(-2px) scale(1.1);
 }
 
-#beneficios{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    height: 100vh;
-    color: white;
-    padding: 30px;
-    /* background:url(/src/images/marceneiro.jpg) center right / cover no-repeat fixed; */
-}
-    
-#beneficios ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-#beneficios ul li{
-    background-color: var(--dark-green-);
-    width: 100%;
-    max-width: 500px;
-    border:solid white;
-    border-radius: 30px;
-    padding: 30px;
-    font-weight: 700;
-    text-align: center;
-}
-#beneficios ul li:nth-child(even){
-    background-color: var(--soft-black-);
-    border: solid var(--dark-green-);
-}
-
-#investir{
-    display: grid;
-    grid-template-columns: repeat(2, 60% 40%);
-    height: 100vh;
-    color: white;
-    background: url(/src/images/victor-meza-ZAaUcbDdkQU-unsplash.jpg) center left / cover no-repeat local;
-}
-#investir h2{
-    color: white;
-    padding: 50px;
-    font-family: var(--font-2-);
-}
-.texts{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    font-size: clamp(10px,2vw, 20px);
-    text-align: center;
-    gap: 10px;
-    background-color: var(--dark-primary-);
-    border-left: solid 5px;
-}
 #atendimento{
     display: grid;
     grid-template: auto /  repeat(2, 1fr);
@@ -218,7 +186,6 @@ header{
     align-items: center;
     height: 100%;
     width: 100%;
-    grid-column: 2 / 2;
     background-color: var(--dark-primary-);
     padding: 20px;
     border-radius: 150px 0 0 150px;
@@ -236,22 +203,26 @@ header{
     align-items: center;
     gap: 20px;
     height: 100%;
+    width: 100%;
     padding: 50px;
-    grid-column: 1/1;
+    /* grid-column: 1/1; */
 }
 
 #atendimento li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     background: linear-gradient(80deg, var(--dark-primary-) 50% , black );
-    padding: 20px;
+    padding: 40px;
     width: 100%;
-    border-radius: 30px 0 30px 0;
+    border-radius: 30px ;
     border: solid 3px white;
-}
-
-#atendimento ul li p{
+    text-align: center;
     font-weight: 700;
     color: white;
-    margin-left: 30px;
+    font-size: clamp(15px,2vw,20px);
 }
 
 #clientes{
@@ -261,15 +232,15 @@ header{
     align-items: center;
     background-color: white;
     color: var(--dark-primary-);
-    padding: 40px;
     min-height: 100vh;
     height:auto ;
     text-align: center;
+    padding-top:50px ;
 }
 
 #clientes ul{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     max-width: 100%;
     padding: 50px;
     gap: 30px;
@@ -280,14 +251,14 @@ header{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 1px;
-    max-width: 200px;
     height:100%;
-    border: solid 3px var(--dark-primary-);
-    border-radius: 30px;
-    /* padding: 40px; */
 }
-
+#clientes ul li img{
+    border: solid 5px var(--dark-primary-);
+    border-bottom:none;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+}
 #clientes .text-clientes{
     display: flex;
     justify-content: center;
@@ -296,9 +267,9 @@ header{
     text-align: center;
     background-color: var(--dark-primary-);
     width: 100%;
-    height: 100%;
-    border-radius: 0px 0px 20px 20px ;
+    height: 100px;
     color: white;
+    border-radius: 0px 0px 20px 20px;
 }
 
 #about{
