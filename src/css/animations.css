@@ -14,3 +14,35 @@
     50%{filter: drop-shadow(1px 1px 3px);}
     100%{filter: drop-shadow(0px 0px 0px);}
 }
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.animated-background{
+     background: linear-gradient(
+        120deg,
+        var(--primary-),
+        var(--dark-primary-),
+        var(--primary-)
+    );
+    background-size: 300% 300%;
+    animation: gradientMove 6s ease-in-out infinite;
+}
+.animated-background-2{
+     background: linear-gradient(
+        120deg,
+        black,
+        var(--dark-primary-),
+        black
+    );
+    background-size: 300% 300%;
+    animation: gradientMove 3s ease-in-out infinite;
+}
